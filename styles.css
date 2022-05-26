@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d3d3d39a;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(205deg, #1d9591, rgb(182, 246, 246));
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+}
+
+li:hover {
+    background-color: #2ee2dc;
+}
+
+#header-img {
+    height: 5vh;
+    padding: 1vh;
+}
+
+header {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#email {
+    margin: 1rem;
+    width: 15rem;
+}
+
+#submit {
+    border: none;
+    background-color: #33566c;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+i {
+    color: #f75c03;
+    margin: 2rem 3rem;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    padding: 1rem;
+}
+
+#first {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card-component {
+    margin: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    height: 30vh;
+    width: 20vw;
+}
+
+.card-component>p {
+    padding: 0 0.5rem;
+}
+
+.card-component>h3 {
+    height: 3vh;
+    background-color: #29cac5a3;
+    color: #370202;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+span {
+    color: #5e2606;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #385d75;
+    margin: 1rem;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#copyright {
+    text-align: right;
+    margin: 0 0.2rem;
+}
+
+#links>p {
+    margin: 0.1rem 0.7rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #53525137;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+p,
+nav {
+    font-family: 'Bitter', serif;
+    ;
+}
+
+button:hover,
+#submit:hover {
+    cursor: pointer;
+    background-color: #000000;
+    box-shadow: 2px 2px 4px #3a637d;
+}
+
+#features {
+    height: 60vh;
+    padding: 5rem 0 2rem 0;
+}
+
+iframe {
+    height: 60vh;
+    width: 50vw;
+}
+
+@media(max-width:947px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    iframe {
+        height: 50vh;
+        width: 60vw;
+    }
+
+    .card-component {
+        height: 40vh;
+    }
+}
+
+@media(max-width:861px) {
+    .card-component>h3 {
+        height: 7vh;
+    }
+
+    header {
+        margin-top: 15vh;
+    }
+
+    li {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    #features {
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width:702px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    #header-img {
+        height: 6vh;
+        width: 60vh;
+        margin: auto;
+    }
+
+    header {
+        margin-top: 18vh;
+    }
+
+    .card-component {
+        margin: 0.5rem;
+        width: 30vw;
+    }
+
+    iframe {
+        width: 70vw;
+    }
+
+    @media(max-width:426px) {
+        #cards {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            padding: 0 0.5rem;
+        }
+
+        .text>h2 {
+            font-size: 1.2rem;
+        }
+
+        .text>p {
+            font-size: 1rem;
+        }
+
+        #video {
+            padding-top: 28vh;
+        }
+
+        iframe {
+            height: 30vh;
+            width: 90vw;
+        }
+
+        .card-component {
+            width: 80vw;
+            justify-content: space-evenly;
+        }
+
+        #cards {
+            align-items: center;
+        }
+
+        footer {
+            font-size: 0.8rem;
+        }
+
+        #header-img {
+            width: 57vw;
+            height: 4vh;
+        }
+
+        li {
+            font-size: 1rem;
+        }
+    }
+
+    @media(max-width:363px) {
+        #features {
+            margin-bottom: 50vh;
+        }
+
+        #video {
+            padding-top: 20vh;
+        }
+    }
+
+}
